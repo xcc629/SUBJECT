@@ -3,16 +3,17 @@ import { ThemeProvider } from "styled-components";
 
 import GlobalStyle from "./styles/globalStyles";
 import theme from "./styles/theme";
+import Main from "./pages/main";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Routes>
-          <Route path="*" />
+          <Route path="*" element={<Main />} />
         </Routes>
-        <GlobalStyle />
       </BrowserRouter>
+      <GlobalStyle />
     </ThemeProvider>
   );
 }

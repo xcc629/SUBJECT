@@ -32,7 +32,7 @@
   
   - organisms : 
     - 구분 기준: 2개 이상의 작은 기능의 합
-    - 이름: UI + Section
+    - 이름: 담당 부분(ex.header, footer) + Section
   
   - pages:
     - 이름: page를 나타내는 디렉토리 내부의 index로 고정

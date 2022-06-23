@@ -15,7 +15,7 @@ const AwardImgStringStyled = styled.div<Pick<AwardImgStringProps, "imgUrl">>`
   background-size: 54px 54px;
   background-repeat: no-repeat;
   color: ${({ theme }) => theme.color.gray800};
-  font-size: ${({ theme }) => theme.fontsSize.m};
+  font-size: ${({ theme }) => theme.fontsSize.s};
   font-weight: bold;
   line-height: 22px;
 `;

@@ -33,3 +33,4 @@
 - `docs` 문서 수정
 - `style` 코드 포맷팅, 띄어쓰기, 들여쓰기
 - `merge` merge 시 사용
+- `refact` 리팩토링

@@ -27,36 +27,44 @@ export default function CountingNumber({
     const totalTimes = 2000;
 
     const units = {
-      first: 5,
+      first:
+        Math.ceil((number / 100) * 9) >= 4 ? 4 : Math.ceil((number / 100) * 9),
       middle: 1,
       last: 1,
     };
 
     const restCount = {
-      middle: 10,
+      middle: 30,
       last: 3,
     };
 
     const speeds = {
-      middle: 50,
-      last: 150,
+      middle: 15,
+      last: 100,
     };
 
     // 초기속도: 마지막, 두번째 속도를 정한 후 역으로 계산.
     // 계산식  =  남은 시간 / 남은 개수 / 증가하는 수의 단위
     const firstSpeed =
-      (totalTimes -
-        (restCount.last * speeds.last - restCount.middle * speeds.middle)) /
-      (number - 10) /
-      units.last;
+      ((totalTimes -
+        (restCount.last * speeds.last) / units.last -
+        (restCount.middle * speeds.middle) / units.middle) /
+        (number - restCount.middle)) *
+      units.first;
 
     let interval = setInterval(() => {
-      // 10개 남았을 때 속도 50으로 변경하여 setInterval 재호출
-      if (number - Number(currentNumber.current.innerText) <= 10) {
+      // restCount.middle 정도 남았을 때 속도 변경하여 setInterval 재호출
+      if (
+        number - Number(currentNumber.current.innerText) <=
+        restCount.middle
+      ) {
         clearInterval(interval);
         interval = setInterval(() => {
-          // 3개 남았을 때 속도 250으로 변경하여 setInterval 재호출
-          if (number - Number(currentNumber.current.innerText) <= 3) {
+          // restCount.last 남았을때 속도 250으로 변경하여 setInterval 재호출
+          if (
+            number - Number(currentNumber.current.innerText) <=
+            restCount.last
+          ) {
             clearInterval(interval);
             interval = setInterval(() => {
               plusUnit(units.last);

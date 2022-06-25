@@ -1,3 +1,5 @@
+import AchievementSection from "../../components/organisms/AchievementSection";
+
 export default function Main() {
-  return <div>메인입니다.</div>;
+  return <AchievementSection />;
 }

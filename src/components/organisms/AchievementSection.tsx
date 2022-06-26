@@ -67,13 +67,13 @@ export default function AchievementSection(props: AchievementSectionProps) {
     <AchievementSectionStyled {...props}>
       <BigAwardImgStringWrapper>2021년 12월 기준</BigAwardImgStringWrapper>
       <CountingNumberWrapper>
-        <StringWithCountingNumber number={700} unit="명">
+        <StringWithCountingNumber number={700} numberUnit="만" unit="명">
           의 여행자
         </StringWithCountingNumber>
-        <StringWithCountingNumber number={100} unit="개">
+        <StringWithCountingNumber number={100} numberUnit="만" unit="개">
           의 여행 리뷰
         </StringWithCountingNumber>
-        <StringWithCountingNumber number={470} unit="개">
+        <StringWithCountingNumber number={470} numberUnit="만" unit="개">
           의 여행 일정
         </StringWithCountingNumber>
       </CountingNumberWrapper>

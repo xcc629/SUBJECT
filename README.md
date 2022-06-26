@@ -78,3 +78,4 @@ npm start
 ## 시연 이미지
 
 ![화면 기록 2022-06-26 오후 2 12 52](https://user-images.githubusercontent.com/85507868/175800461-7a9d27ac-726d-4dfd-91e6-4513240487dd.gif)
+gif 변환 오류로 실제보다 프레임이 떨어집니다.

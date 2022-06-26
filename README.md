@@ -29,6 +29,7 @@ npm start
   반복하는 UI 재사용을 위하여, JS 프레임워크 리액트를 사용하였습니다.
 
 - Styled-component 선택 이유
+
   js 안에서 css를 작성 할 수 있는 라이브러리 중 하나인 styled-component를 사용하였습니다. 자동으로 classname을 생성하고, props를 통하여 바로 Js의 값을 이용할 수 있다는 장점이 있어 선택하였습니다.
 
 <br/>

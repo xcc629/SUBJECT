@@ -7,8 +7,8 @@ import CountingNumber, { CountingNumberProps } from "../atoms/CountingNumber";
 
 export interface StringWithCountingNumberProps extends BaseProps {
   number: CountingNumberProps["number"];
-  numberUnit?: string;
   unit: string;
+  numberUnit?: string;
 }
 
 const StringWithCountingNumberStyled = styled.div`

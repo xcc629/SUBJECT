@@ -36,7 +36,7 @@ npm start
 
 ## 과제 구현 목록
 
-과제구현 계획 설정과 관리는 github에서 제공해주는 Issues 기능을 활용하였습니다.
+과제구현 계획 설정과 관리는 github에서 제공해주는 [ISSUES](https://github.com/xcc629/SUBJECT/issues) 기능을 활용하였습니다.
 
 ### 처리 완료 한 이슈
 

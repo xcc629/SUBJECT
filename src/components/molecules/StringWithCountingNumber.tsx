@@ -8,6 +8,7 @@ import CountingNumber, { CountingNumberProps } from "../atoms/CountingNumber";
 export interface StringWithCountingNumberProps extends BaseProps {
   number: CountingNumberProps["number"];
   unit: string;
+  numberUnit?: string;
 }
 
 const StringWithCountingNumberStyled = styled.div`
@@ -23,6 +24,7 @@ const CountingNumberWrapper = styled.strong`
 
 export default function StringWithCountingNumber({
   number,
+  numberUnit,
   unit,
   children,
   ...rest
@@ -30,7 +32,9 @@ export default function StringWithCountingNumber({
   return (
     <StringWithCountingNumberStyled {...rest}>
       <CountingNumberWrapper>
-        <CountingNumber number={number} />만 {unit}
+        <CountingNumber number={number} />
+        {numberUnit && `${numberUnit} `}
+        {unit}
       </CountingNumberWrapper>
       {children}
     </StringWithCountingNumberStyled>

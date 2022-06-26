@@ -44,7 +44,7 @@ export default function CountingNumber({
     };
 
     // 초기속도: 마지막, 두번째 속도를 정한 후 역으로 계산.
-    // 계산식  =  남은 시간 / 남은 개수 / 증가하는 수의 단위
+    // 계산식  =  남은 시간 / 남은 개수 * 증가하는 수의 단위
     const firstSpeed =
       ((totalTimes -
         (restCount.last * speeds.last) / units.last -

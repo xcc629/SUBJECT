@@ -8,6 +8,11 @@
 https://github.com/xcc629/SUBJECT.git
 ```
 
+패키지 설치
+```
+npm i
+```
+
 실행방법
 
 ```
